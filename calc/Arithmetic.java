@@ -1,4 +1,6 @@
 package calc;
+import java.util.concurrent.ThreadLocalRandom;
+
 
 public class Arithmetic {
 	public static float add(float num1, float num2) {
@@ -39,5 +41,13 @@ public class Arithmetic {
 
 	public static float mod(float num1, float num2) {
 		return (num1 % num2);
+	}
+
+	public static float randomNumber(float num1, float num2) {
+		return ThreadLocalRandom.current().nextFloat() * (num2 - num1);
+	}
+
+	public static float multiplyCubes(float num1, float num2) {
+		return (num1 * num1 * num1) * (num2 * num2 * num2);
 	}
 }
