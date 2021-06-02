@@ -2,7 +2,7 @@ package calc;
 
 public class Arithmetic {
 	public static float add(float num1, float num2) {
-		return 10.0f;
+		return (num1 + num2);
 	}
 
 	public static float subtract(float num1, float num2) {
